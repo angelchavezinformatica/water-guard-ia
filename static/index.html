@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Control de Bomba de Agua</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <div class="toggle-button">
+      <label class="switch">
+        <input type="checkbox" id="themeToggle" />
+        <span class="slider"></span>
+      </label>
+      <span id="themeLabel">Cambiar a Tema Oscuro</span>
+    </div>
+
+    <h1>Control de Bomba de Agua</h1>
+
+    <div class="loader" id="loader"></div>
+
+    <button id="onButton" style="display: none">Encender</button>
+    <button id="offButton" style="display: none">Apagar</button>
+
+    <div id="status">Estado: <span id="pumpStatus">Desconocido</span></div>
+
+    <div id="sensorData">
+      <p id="humidityValue">Humedad: -</p>
+      <p id="temperatureValue">Temperatura: -</p>
+    </div>
+
+    <script type="module" src="/main.js"></script>
+
+  </body>
+</html>
